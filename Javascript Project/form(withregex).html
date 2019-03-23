@@ -1,0 +1,109 @@
+<html>
+<head>
+<link href="C:\Users\admin\Desktop\Javascript Project\feedback.css" rel='stylesheet'>
+<script>
+function Submit()
+{
+var name = document.getElementsByName("name")[0].value;
+var namet = false 
+var mobile = document.getElementsByName("name")[1].value;
+var mobilet = false
+var email = document.getElementsByName("name")[2].value;
+var genre = document.registration.genre;
+var patt = /[a-zA-z]/
+var pat = /[0-9]{10}/
+var pa = /^\w+([\[.-]?\w+)?@\w+.\w{2,3}$/
+var result = patt.test(name);
+if (result)
+{
+if (pat.test(name))
+alert("Enter Only Alphabets for the name field")
+else
+{
+namet = true
+}
+}
+else 
+alert("Enter Only Alphabets for the name field")
+
+if (namet)
+{
+if (pat.test(mobile))
+{
+mobilet = true
+}
+else 
+alert("Enter Valid Phone Number")
+}
+
+if (genre.value == "")
+    {
+        alert("Please tell us which genre do you like?");
+        genre.focus();
+    }
+	
+
+if (pa.test(email))
+{
+		window.open("Thanksgiving.html")
+}
+else 
+alert("Enter Valid Email")
+}
+
+
+
+
+</script>
+</head>
+<body background = "C:\Users\admin\Desktop\Javascript Project\5225164-simple-wallpaper.jpg">
+<h1><Novel-worm</h1>
+		<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\home1.html" class="active">Home</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\login.html">Login</a></li>
+			<li>
+			<a href = "#">Other Genres</a>
+			<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sci page\scifi page.html">Science-Fiction</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Romance page\Romance page.html">Romance</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Mystery page\Mystery page.html">Mystery</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Classic Page\Classics page.html">Classics</a></li>
+			</ul>
+			</li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\quiz1.html">Quiz</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Adaptations\adaptations.html">Adaptations</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sign-up.html">Sign up</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\form(withregex).html">Feedback</a></li>
+</ul>
+<font color="white">
+<p><i>We are happy to see your interest in books</i>
+<i>Please feed us back!...coz every visitor is valueable to us</i>
+</p>
+</font>
+<form name = "registration" align="left">
+Name : <input type = "text" name = "name">
+<br>
+Mobile : <input type = "text" name = "name">
+<br>
+Email : <input type = "text" name = "name">
+<br>
+Which genre of books do you prefer?
+        <select type="text" value="" name="genre">
+			<option></option>
+            <option>Sci-fi</option>
+            <option>Romance</option>
+            <option>Mystery</option>
+            <option>Classics</option>
+            <option>All</option>
+        </select>
+<br>
+Comments:  <textarea cols="55" name="comment"></textarea><label>(Optional)</label>
+<br>
+<center>
+<input type="submit" onclick="Submit()" value = "Submit">
+<input type="reset" value="Reset" name="reset">
+</center>
+</form>
+
+</body>
+</html>

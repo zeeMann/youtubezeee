@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link href="C:\Users\admin\Desktop\Javascript Project\style.css" rel='stylesheet'>
+</head>
+<body background="C:\Users\admin\Desktop\Javascript Project\josh-withers-534821-unsplash.jpg">
+<br>
+<h1><font color="black">Login-Portal</font></h1>
+<br>
+<center>
+<input type="text" id="username" placeholder="Username"></br><br>
+<input type="password" id="password" placeholder="Password"></br><br>
+<input type="button" value="Log-in" onClick="clicked()"></br>
+</center>
+<script>
+function clicked()  {
+     
+	 var user = document.getElementById("username");
+	 var pass = document.getElementById("password");
+	 
+	 var user1 = document.getElementById("username").value;
+	 var pass1 = document.getElementById("password").value;
+	 
+if(user.value !="" && pass.value !="")  
+	 {
+	  alert("Login Successful!!!");
+	  window.alert("You are logged in as : " + user.value);
+	  window.open("home1.html");
+	     
+	 }
+	 
+else
+	 {
+	window.alert("Please fill all the details!!!");
+     } 
+                     }
+</script>
+</body>
+</html>

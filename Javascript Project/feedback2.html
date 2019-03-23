@@ -1,0 +1,110 @@
+<html>
+<head>
+		<link href="C:\Users\admin\Desktop\Javascript Project\feedback.css" rel='stylesheet'>
+	</head>
+<script>
+function validatefeedback()
+{
+    var name = document.feedback.name;
+    var email = document.feedback.email;
+    var phone = document.feedback.telephone;
+    var genre = document.feedback.genre;
+    var comment = document.feedback.comment;
+	
+if (name.value == "")
+    {
+        alert("Please enter your name.");
+        name.focus();
+		
+		if (email.value == "")
+    {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+    }
+        if (email.value.indexOf("@", 0) < 0)
+    {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+    }
+	    if (email.value.indexOf(".", 0) < 0)
+    {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+	}
+	    if (phone.value == "")
+    {
+        alert("Please enter your telephone number.");
+        phone.focus();
+    }
+        if (genre.value == "")
+    {
+        alert("Please tell us which genre do you like?");
+        genre.focus();
+    }
+	    if (comment.value == "")
+    {
+        alert("Please provide a detailed description or comment.");
+        comment.focus();
+    }
+    }
+else
+    { 
+		window.open("Thanksgiving.html")
+		
+	}
+	
+}
+
+
+</script>
+</head>
+<body background = "C:\Users\admin\Desktop\Javascript Project\bg2.jpg">
+<h1><Novel-worm</h1>
+		<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\home1.html" class="active">Home</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\login.html">Login</a></li>
+			<li>
+			<a>Other Genres</a>
+			<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sci page\scifi page.html">Science-Fiction</a></li>
+			<li><a href = "#">Romance</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Mystery page\Mystery page.html">Mystery</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Classic Page\Classics page.html">Classics</a></li>
+			</ul>
+			</li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\quiz1.html">Quiz</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Adaptations\adaptations.html">Adaptations</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sign-up.html">Sign up</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\feedback2.html">Feedback</a></li>
+</ul>
+<font color="white">
+<h2>KUDOS!!!</h2>
+<p><i>We are happy to see your interest in books</i>
+<i>Please feed us back!...coz every visitor is valueable to us</i>
+</p>
+</font>
+<form method="post" name="feedback" onsubmit="validatefeedback();">
+Name: <input type="text" size="65" name="name">
+<br>
+E-mail Address:  <input type="text" size="65" name="email">
+<br>
+Telephone: <input type="text" size="65" name="telephone">
+<br>
+Which genre of books do you prefer?
+        <select type="text" value="" name="genre">
+			<option></option>
+            <option>Sci-fi</option>
+            <option>Romance</option>
+            <option>Mystery</option>
+            <option>Classics</option>
+            <option>All</option>
+        </select>
+<br>
+Comments:  <textarea cols="55" name="comment">  </textarea>
+
+<br>
+<input type="submit" value="Submit" name="submit">
+<input type="reset" value="Reset" name="reset">
+
+</body>
+</html>

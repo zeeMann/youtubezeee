@@ -1,0 +1,61 @@
+<html>
+<head>
+<link href="C:\Users\admin\Desktop\Javascript Project\style.css" rel='stylesheet'>
+</head>	
+<body background="C:\Users\admin\Desktop\Javascript Project\josh-withers-534821-unsplash.jpg">
+<script>
+function cancel()
+{
+      document.form.nametxt.value = "";
+	  document.form.emailtxt.value = "";
+	  document.form.password.value = "";
+}
+function valid()
+{
+     var name;
+	 nametxt = document.form.nametxt.value;
+	 emailtxt = document.form.emailtxt.value;
+	 password = document.form.password.value;
+	 
+	 if ( nametxt == "" || emailtxt == "" || password == "" )
+	 {
+	 alert("Please fill all the details!!");
+	 }
+	 else if (password.length>12)
+	 {
+	 alert("Your password is too long");
+	 }
+	 else
+	 {
+	 alert("Sign-up Successful!!!");
+	 window.open("home1.html")
+	 }
+	 
+	 
+}
+</script>
+<br><br><br><br><br><br>
+<h1><font color="black"><center>Sign-up</center></font></h1>
+<center>
+<form name="form" align=center >
+<font color=black face=Arial>
+<b>Name : </b><input type="text" name="nametxt"></input>
+<br><br>
+<b>Email-Id: </b><input type="text" name="emailtxt"></input>
+<br><br>
+<b>Password : </b> <input type="password" name="password" placeholder="password"></input>
+<br><br>
+<b>Interested in : <b>
+<select name="interesttxt">
+<option value="1">--Books--</option>
+<option value="1">--Adaptations--</option>
+<option value="1">--Both--</option>
+</select>
+</font>
+<br><br>
+<input type="button" value="Sign-up" onclick="valid()"></a> &nbsp;
+<input type="button" value="Reset" onclick="cancel()"></input> 
+</form>
+</center>
+</body>
+</html>

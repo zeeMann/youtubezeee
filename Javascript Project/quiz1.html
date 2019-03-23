@@ -1,0 +1,121 @@
+<html>
+<head>
+<link href="C:\Users\admin\Desktop\Javascript Project\style.css" rel='stylesheet'>
+</head>
+<body background="C:\Users\admin\Desktop\Javascript Project\alvaro-reyes-507651-unsplash.jpg">
+<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\home1.html" class="active">Home</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\login.html">Login</a></li>
+			<li>
+			<a>Other Genres</a>
+			<ul>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sci page\scifi page.html">Science-Fiction</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Romance page\Romance page.html">Romance</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Mystery page\Mystery page.html">Mystery</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Classic Page\Classics page.html">Classics</a></li>
+			</ul>
+			</li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\quiz1.html">Quiz</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\Adaptations\adaptations.html">Adaptations</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\sign-up.html">Sign up</a></li>
+			<li><a href = "C:\Users\admin\Desktop\Javascript Project\form(withregex).html">Feedback</a></li>
+		</ul>
+		<br><br>
+<h1><font color="black">Quiz</font></h1>
+<form name="myform">
+<font color=black face=Aharoni>
+Q1. Who is the author of the novel The Time Machine that is set in 802,701 CE? <br>
+<input type="radio"  name="q1" value="a">Ha Jin</br>
+<input type="radio"  name="q1" value="b">Robert Heinlein</br>
+<input type="radio"  name="q1" value="c">H.G Wells</br><br>
+Q2. Which was the 1st Science Fiction Novel? <br>
+<input type="radio"  name="q2" value="a">Frankenstein</br>
+<input type="radio"  name="q2" value="b">Dracula</br>
+<input type="radio"  name="q2" value="c">Van Helsing</br><br>
+Q3. Which was the 1st novel in the Harry Potter Series? <br>
+<input type="radio"  name="q3" value="a">The Philosopher's Stone</br>
+<input type="radio"  name="q3" value="b">The Half Blood Prince</br>
+<input type="radio"  name="q3" value="c">The Goblet Of Fire</br><br>
+Q4.Who is the author of the Lord of the Rings Trilogy AND the Hobbit? <br>
+<input type="radio"  name="q4" value="a">Roahl Dahl</br>
+<input type="radio"  name="q4" value="b">J.K Rowling</br>
+<input type="radio"  name="q4" value="c">J.R.R Tolkein</br><br>
+Q5.Which novel by J.D. Salinger that is still controversial today features Holden Caulfield as the protagonist? <br>
+<input type="radio"  name="q5" value="a">Conspiracy Theory</br>
+<input type="radio"  name="q5" value="b">The Catcher in the Rye</br>
+<input type="radio"  name="q5" value="c">The Collector</br><br>
+Q6.Which Alex Garland novel set in Thailand, was made into a film starring Leonardo DiCarpio? <br>
+<input type="radio"  name="q6" value="a">Titanic</br>
+<input type="radio"  name="q6" value="b">The Beach</br>
+<input type="radio"  name="q6" value="c">Inception</br><br>
+
+<center>
+<input type="button" value="Finish Quiz" onclick="check()">
+</center>
+<p id="sf"><p>
+
+<script>
+function check()
+{
+    var q1=document.myform.q1.value;
+	var q2=document.myform.q2.value;
+	var q3=document.myform.q3.value;
+	var q4=document.myform.q4.value;
+	var q5=document.myform.q5.value;
+	var q6=document.myform.q6.value;
+	var count=0;
+	 
+	if(q1=="c")
+    {
+     count++;
+	}
+	if(q2=="a")
+    {
+     count++;
+	}
+	if(q3=="a")
+    {
+     count++;
+	}
+	if(q4=="c")
+    {
+     count++;
+	}
+	if(q5=="b")
+    {
+     count++;
+	}
+	if(q6=="b")
+    {
+     count++;
+	}
+	alert("You have got"+" "+" " +count+ " points"+"  "+"out of 6 points");
+	
+	if((count==0) || (count==1) || (count==2) || (count==3))
+	{
+	alert("Please try again!!. As your score is below average.")
+	alert("Sorry no discount on this score.Try the quiz again!!")
+	}
+	
+    else if((count==4) || (count==5))
+	{
+	alert("You have a decent score!!!.Try again to achieve a better score!.")
+	alert("Congratulations!!! you get 10% off on Amazon Book store!")
+	}
+	
+	else
+	{
+	alert("Your performance is excellent!!!.Keep it up!!")
+	alert("Congrats!! You get 25% off on Amazon on your excellent achievement!!.")
+	}
+	
+	
+	
+	
+}
+
+</script>
+</font>
+</form>
+</body>
+</html>

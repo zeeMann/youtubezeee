@@ -1,0 +1,44 @@
+<html>
+<head>
+  <script>
+  function validate()
+    {
+    var x=document.forms["Myform"].length
+    document.write(x);
+}
+function disabled()
+{
+    document.forms["Myform"]["Address"].disabled=false;
+
+  }
+
+</script>
+</head>
+<body background="C:\Users\Hi\Desktop\cswt\the project\Nvidia-GeForce-GTX-Feature.jpg">
+  <font color="black">
+<form name="Myform" onsubmit="validate()" method="post">
+  First name : <input type="text" name="fname" ><br><br>
+  Last name : <input type="text" name="lname" ><br><br>
+  Address :<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea rows="5" cols="5" name="Address" disabled="false"></textarea><br><br>
+  Phone number : <input type="text"><br><br>
+  Gender : <input type="radio" name="r1">Male &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           <input type="radio" name="r1">Female
+  <br><br>City : <select>
+    <option value="blank"></option>
+    <option value="mumbai">Mumbai</option>
+    <option value="Pune">Pune</option>
+    <option value="Kochi">Kochi</option>
+    <option value="Delhi">Delhi</option>
+  </select>
+  <br><br>
+  Course :
+  <input type="checkbox">BCA</input>
+  <input type="checkbox">BBA-IT</input>
+  <input type="checkbox">Bsc.IT</input>
+  <br><br>
+<input type="submit" value="submit">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" value="reset">
+
+</form>
+</html>
